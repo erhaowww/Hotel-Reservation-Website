@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "6e3063e3-08d8-4b5e-9aa7-edee4f0d0828": {
+      "ProjectGuid": "6e3063e3-08d8-4b5e-9aa7-edee4f0d0828",
+      "DisplayName": "PeaceHotel",
+      "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 1
+}

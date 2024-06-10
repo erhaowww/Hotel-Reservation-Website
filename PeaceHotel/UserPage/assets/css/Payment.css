@@ -1,0 +1,298 @@
+﻿@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+
+body {
+    font-family: 'Work Sans', sans-serif;
+    background: #00d2ff;
+    background: -webkit-linear-gradient(to right, #3a7bd5, #00d2ff);
+    background: linear-gradient(to right, #3a7bd5, #00d2ff);
+    margin: 0;
+}
+
+.backToMenu {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 0px;
+}
+
+div.backToMenu > a > button {
+    border: 2px solid grey;
+    width: 60px;
+    height: 45px;
+    transition: all 0.15s ease;
+    border-radius: 30px;
+}
+
+    div.backToMenu > a > button:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
+.card {
+    background: #16181a;
+    border-radius: 14px;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 128px;
+    padding: 60px 20px 61px 20px;
+    box-shadow: 2px 10px 40px black;
+    z-index: 99;
+    display: block;
+}
+
+.paypal {
+    width: 500px;
+    height: 250px;
+    margin: auto;
+    margin-top: 61px;
+    background: white;
+    text-align: center;
+    z-index: 99;
+    display: none;
+    margin-bottom: -3px;
+    border:2px solid black;
+    border-radius:10px;
+    padding-top:20px;
+}
+
+.paypal-id, .paypal-password {
+    font-size: 14px;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    height: 30px;
+    width: 350px;
+    
+}
+.paypal-submit {
+    margin-top:10px;
+    font-size: 14px;
+    width: 150px;
+    padding:10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor:pointer;
+}
+.logo-card {
+    max-width: 50px;
+    margin-bottom: 15px;
+    margin-top: -19px;
+}
+
+label {
+    display: flex;
+    font-size: 10px;
+    color: white;
+    opacity: .4;
+}
+
+.card-detail {
+    font-family: 'Work Sans', sans-serif;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid transparent;
+    color: #dbdce0;
+    transition: border-bottom .4s;
+}
+
+    .card-detail:focus {
+        border-bottom: 1px solid #1abc9c;
+        outline: none;
+    }
+
+::placeholder {
+    color: #8e8e8e;
+}
+
+.cardnumber {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.name {
+    display: block;
+    font-size: 15px;
+    max-width: 200px;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.toleft {
+    float: left;
+}
+
+.ccv {
+    width: 50px;
+    margin-top: -5px;
+    font-size: 15px;
+}
+
+.receipt {
+    background: #dbdce0;
+    border-radius: 4px;
+    padding: 5%;
+    padding-top: 200px;
+    max-width: 600px;
+    display: block;
+    margin: auto;
+    margin-top: -300px;
+    z-index: -999;
+    position: relative;
+}
+
+.receipt-detail {
+    margin-top: 150px;
+}
+
+.col {
+    width: 50%;
+    float: left;
+}
+
+.bought-item {
+    background: #f5f5f5;
+    padding: 2px;
+}
+
+.booking-rooms {
+    margin-top: -3px;
+}
+
+.cost {
+    color: #3a7bd5;
+}
+
+.seller {
+    color: #3a7bd5;
+}
+
+.description {
+    font-size: 13px;
+}
+
+.price,.date {
+    font-size: 12px;
+}
+
+.comprobe {
+    text-align: center;
+}
+
+.proceed {
+    position: absolute;
+    transform: translate(300px, 10px);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #1abc9c;
+    border: none;
+    color: white;
+    transition: box-shadow .2s, transform .4s;
+    cursor: pointer;
+    font-size:30px;
+
+}
+
+    .proceed:active {
+        outline: none;
+    }
+
+    .proceed:focus {
+        outline: none;
+        box-shadow: inset 0px 0px 5px white;
+    }
+
+.sendicon {
+    filter: invert(100%);
+    padding-top: 2px;
+}
+
+.payment__types {
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 20px 0;
+    font-size: 18px;
+    display: flex;
+    text-align: left;
+}
+
+.payment__type {
+    display: flex;
+    border: 2px solid #d9d9d9;
+    border-radius: 8px;
+    padding: 10px 20px;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: #d9d9d9;
+    transition: all 0.15s ease;
+}
+
+    .payment__type:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+    }
+
+    .payment__type.active {
+        color: #0a0a0a;
+        background: #f6fcf7;
+        border-color: #7dc855;
+    }
+
+    .payment__type + .payment__type {
+        margin-left: 10px;
+    }
+
+
+button.backMenu {
+    display: none;
+}
+
+button.backButton {
+    display: block;
+}
+
+
+@media (max-width: 850px) {
+    .backToMenu {
+        width: 100%;
+        text-align: center;
+        margin-top: 50px;
+        margin-left:0;
+        display: block;
+        position: relative;
+    }
+    div.backToMenu > a > button.backMenu {
+        width: 80%;
+        margin:auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .proceed {
+        transform: translate(250px, 10px);
+    }
+
+    .col {
+        display: block;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+@media only screen and (max-width:851px) {
+
+    button.backButton {
+        display: none;
+    }
+
+    button.backMenu {
+        display: block;
+    }
+}
